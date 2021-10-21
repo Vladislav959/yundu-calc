@@ -1,0 +1,14 @@
+.button{
+    width: calc(var(--width) / 4 - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--width) / 4 - 10px);
+    border-radius: 10px;
+    grid-area:ce;
+    cursor: pointer;
+    background: #33d190;
+    font-size:1em;
+    color:white;
+    font-family:'Gordita Bold'
+}

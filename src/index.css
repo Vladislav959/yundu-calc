@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	@font-face{
+    font-family:'Euclid Medium';
+    src:url('https://assets.yundu.co/EuclidCircularA-Medium.ttf');
+}
+    @font-face{
+    font-family:'Gordita Bold';
+    src:url('https://assets.yundu.co/Gordita-Bold.ttf');
+}  
+
+@font-face{
+    font-family:'Gordita Medium';
+    src:url('https://assets.yundu.co/Gordita-Medium.ttf');
+}  
+
+    :root{
+        --brand:#33d190;
+    }
+    *{
+transition:border-color,color,background .4s;
+        appearance: none;
+        box-sizing:border-box;
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+    }
+    body{
+    background:var(--primary);
+    margin:0;
+    padding:0;
+    font-size:1em;
+user-select:none;
+    }
+
+    p,h1,h2,h3,h4,h5,h6{
+        margin:0;
+    }
+p,h1,h2,h3,h4,h5,span,label,li{
+color:var(--text);}
+    :focus{
+        outline:none;
+    }
+    
+    a{
+        text-decoration:underline;
+        color:var(--brand);
+        text-decoration-color:var(--brand);
+    }
+
+label{
+font-family:'Gordita Medium';
+font-size:0.9em;
+margin-top: 10px;
+
+margin-bottom: 3px;
+display: block;
+}
+p, span, a{
+font-size:1em;
+font-family: 'Euclid Medium';
+line-height: 1.25em;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Gordita Bold';
+}
+:root{
+    --size-1:2.1em;
+    --size-2:1.9em;
+    --size-3:1.7em;
+    --width:314px;
+    --font-size:1.5em;
+}
+@media(max-width:360px){
+    :root{
+        --width:260px;
+        --font-size:1.3em;
+    }
 }

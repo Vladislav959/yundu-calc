@@ -1,0 +1,23 @@
+.button{
+    width: calc(var(--width) / 4 - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.2px solid #f6f6f6;
+    height: calc(var(--width) / 4 - 10px);
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.button p{
+    font-size:var(--font-size);
+    font-family:'Gordita Medium'
+}
+.buttonaccent{
+    background:#33d190;
+    border-color:transparent;
+}
+
+.buttongray{
+    background:#f9f9f9;
+}

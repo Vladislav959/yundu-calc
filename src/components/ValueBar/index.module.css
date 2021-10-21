@@ -1,0 +1,26 @@
+.main{
+    border-radius:15px;
+    display:flex;
+    align-items:flex-end;
+    padding:15px 25px 15px 15px;
+    overflow:hidden;
+    flex-direction:column;
+    justify-content:flex-end;
+    border: 2.2px solid #f4f4f4;
+    width:var(--width);
+    margin:auto;
+    user-select: text;
+    margin-top:20px;
+}
+.mainspan{
+    font-size:0.8em;
+    color:rgb(172, 172, 172);
+}
+.mainp{
+    user-select: text;
+font-family: 'Gordita Bold';
+}
+.preview{
+    color:rgb(207, 207, 207);
+    font-size:0.8em;
+}

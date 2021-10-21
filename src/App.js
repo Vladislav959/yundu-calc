@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Calculator from './components/Calculator'
+import EquationCalculator from './components/EquationCalculator'
+import Switch from './components/Switch'
+import {Component} from 'react'
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      mode:1
+    }
+    this.setMode = this.setMode.bind(this);
+  }
+  setMode(mode){
+    this.setState({mode})
+  }
+  render(){
+  let element;
+  switch(this.state.mode){
+    case 1:
+      element = <Calculator/>
+      break;
+    case 2:
+      element = <EquationCalculator/>
+      break;
+    default:
+      element = <Calculator/>
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Switch setMode={this.setMode} curMode={this.state.mode}/>
+      {element}
     </div>
   );
 }
 
+  }
 export default App;

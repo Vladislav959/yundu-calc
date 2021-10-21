@@ -1,0 +1,21 @@
+.main{
+    display: grid;
+    width: var(--width);
+    margin:auto;
+    grid-gap: 10px;
+    margin-top:20px;
+    grid-template-areas: "ce percent degree clear";
+}
+.degreespan{
+    font-family:'Gordita Medium';
+    font-size:0.6em;
+    position:absolute;
+    right:19px;
+    top:16px
+}
+@media(max-width:360px){
+    .degreespan{
+        top:12px;
+        right:14px;
+    }
+}
