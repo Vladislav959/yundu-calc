@@ -13,6 +13,11 @@ class App extends Component{
   setMode(mode){
     this.setState({mode})
   }
+  componentDidMount(){
+    const value = Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight, document.documentElement.scrollHeight,document.documentElement.offsetHeight);
+    console.log(value)
+    window.parent.postMessage(value,'*');
+  }
   render(){
   let element;
   switch(this.state.mode){
